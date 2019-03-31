@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="left">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/drive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/custom_background"
+                android:elevation="10dp">
+
+
+                <ImageView
+                    android:id="@+id/affiche1"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/affiche_drive" />
+
+                <TextView
+                    android:id="@+id/Titre1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/affiche1"
+                    android:text="DRIVE"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/real1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Titre1"
+                    android:layout_toEndOf="@id/affiche1"
+                    android:text="réalisateur : Nicolas Winding Refn"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/real1"
+                    android:layout_toEndOf="@id/affiche1"
+                    android:text="Date : 2011"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/durée1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date1"
+                    android:layout_toEndOf="@id/affiche1"
+                    android:text="Durée : 103 min"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durée1"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/affiche1"
+                    android:text="7,9/10"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Fury"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/drive"
+                android:layout_margin="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/custom_background"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/affiche2"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/affichefury" />
+
+                <TextView
+                    android:id="@+id/Titre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/affiche2"
+                    android:text="FURY"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/real2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Titre2"
+                    android:layout_toEndOf="@id/affiche2"
+                    android:text="réalisateur : David Ayer"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/real2"
+                    android:layout_toEndOf="@id/affiche2"
+                    android:text="Date : 2014"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/durée2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date2"
+                    android:layout_toEndOf="@id/affiche2"
+                    android:text="Durée : 134 min"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durée2"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/affiche2"
+                    android:text="7,6/10"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/PulpFiction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Fury"
+                android:layout_margin="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/custom_background"
+                android:elevation="10dp">
+
+
+                <ImageView
+                    android:id="@+id/affiche3"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/affichepulpfiction" />
+
+                <TextView
+                    android:id="@+id/Titre3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/affiche3"
+                    android:text="Pulp Fiction"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/real3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Titre3"
+                    android:layout_toEndOf="@id/affiche3"
+                    android:text="réalisateur : Quentin Tarantino"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/real3"
+                    android:layout_toEndOf="@id/affiche3"
+                    android:text="Date : 1994"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/durée3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date3"
+                    android:layout_toEndOf="@id/affiche3"
+                    android:text="Durée : 154 min"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durée3"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/affiche3"
+                    android:text="8,9/10"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Oss117"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/PulpFiction"
+                android:layout_margin="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/custom_background"
+                android:elevation="10dp">
+
+
+                <ImageView
+                    android:id="@+id/affiche4"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/afficheoss" />
+
+                <TextView
+                    android:id="@+id/Titre4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/affiche4"
+                    android:text="OSS 117 : Le Caire nid d'espions"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/real4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Titre4"
+                    android:layout_toEndOf="@id/affiche4"
+                    android:text="réalisateur : Michel Hazanavicius"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/real4"
+                    android:layout_toEndOf="@id/affiche4"
+                    android:text="Date : 2006"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/durée"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:layout_toEndOf="@id/affiche4"
+                    android:text="Durée : 99 min"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durée"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/affiche4"
+                    android:text="7,1/10"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+
