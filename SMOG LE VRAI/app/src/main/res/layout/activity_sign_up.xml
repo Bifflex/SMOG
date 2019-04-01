@@ -102,7 +102,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ProgressBar
-        android:id="@+id/Progress_register"
+        android:id="@+id/progress_reg"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
