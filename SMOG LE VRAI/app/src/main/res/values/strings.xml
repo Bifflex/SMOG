@@ -6,4 +6,5 @@
     <string name="account_create">Créer le compte</string>
     <string name="confirm_pass">Confirm password...</string>
     <string name="return_login">Retour</string>
+    <string name="acc_create">Créez un compte sur SMOG</string>
 </resources>
