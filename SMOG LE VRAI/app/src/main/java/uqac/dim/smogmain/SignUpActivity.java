@@ -43,6 +43,8 @@ public class SignUpActivity extends AppCompatActivity {
         progress = (ProgressBar) findViewById(R.id.progress_reg);
         mAuth = FirebaseAuth.getInstance();
 
+        progress.setVisibility(View.INVISIBLE);
+
         create_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,6 +77,15 @@ public class SignUpActivity extends AppCompatActivity {
                     }
 
                 }
+            }
+        });
+
+        return_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginIntent = new Intent(SignUpActivity.this, LoginActivity.class);
+                startActivity(loginIntent);
+                finish();
             }
         });
 

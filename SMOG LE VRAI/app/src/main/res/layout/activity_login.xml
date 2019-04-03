@@ -29,87 +29,69 @@
         android:id="@+id/imageView"
         android:layout_width="122dp"
         android:layout_height="112dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
         android:contentDescription="@string/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/kronosback" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/welcome"
         android:textColor="#ffffff"
         android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="369dp"
-        android:layout_height="47dp"
+        android:layout_width="333dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/inscription"
         android:textColor="#ffffff"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/thx"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="238dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="260dp"
+        android:autofillHints="enter_mail"
         android:backgroundTint="@color/colorAccent"
         android:ems="10"
         android:hint="@string/email2"
-        android:autofillHints="enter_mail"
         android:inputType="textEmailAddress"
         android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorPrimary"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568"
         tools:backgroundTint="@color/colorAccent" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="237dp"
-        android:layout_height="47dp"
+        android:layout_width="222dp"
+        android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:autofillHints="enter_password"
         android:backgroundTint="@color/colorAccent"
         android:ems="10"
         android:hint="@string/pass"
@@ -119,40 +101,32 @@
         android:textColorHighlight="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimary"
         android:textStyle="italic"
-        android:autofillHints="enter_password"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="170dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/colorAccent"
         android:text="@string/connect"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="171dp"
+        android:layout_width="161dp"
         android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/colorAccent"
         android:text="@string/Create_acc"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -160,12 +134,8 @@
         android:textColorHighlight="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -173,15 +143,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/colorAccent"
         android:foregroundTint="@color/colorAccent"
         android:indeterminateTint="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
 
 </android.support.constraint.ConstraintLayout>

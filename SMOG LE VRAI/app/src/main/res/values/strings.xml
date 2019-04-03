@@ -16,4 +16,5 @@
     <string name="pass">Password</string>
     <string name="connect">SE CONNECTER</string>
     <string name="Create_acc">CREER UN COMPTE</string>
+    <string name="title">Title</string>
 </resources>
