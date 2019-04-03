@@ -7,34 +7,14 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <android.support.v4.widget.NestedScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RelativeLayout
-            android:id="@+id/DispFilm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:elevation="10dp">
-
-            <ImageView
-                android:id="@+id/poster"
-                android:layout_width="100dp"
-                android:layout_height="200dp" />
-
-            <TextView
-                android:id="@+id/Title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="88dp"
-                android:layout_marginTop="24dp"
-                android:layout_toEndOf="@id/poster"
-                android:text="@string/title" />
-
-        </RelativeLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </android.support.v4.widget.NestedScrollView>
 
@@ -43,7 +23,9 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu_main" />
+        app:menu="@menu/menu_main" >
+
+    </android.support.design.widget.NavigationView>
 
 
 </android.support.v4.widget.DrawerLayout>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.google.firebase.FirebaseApp;
@@ -16,20 +17,43 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
+    private RecyclerView mRecylcerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //FirebaseApp.initializeApp(this);
+        mRecylcerView = (RecyclerView)findViewById(R.id.recyclerview_film);
+        new DataBaseUtility().ReadData(new DataBaseUtility.DataStatus() {
+            @Override
+            public void DataIsLoaded(List<Film> films, List<String> keys) {
+                new RecylcerView_Utility().setConfig(mRecylcerView, MainActivity.this, films, keys);
+            }
+
+            @Override
+            public void DataIsInserted() {
+
+            }
+
+            @Override
+            public void DataIsUpdated() {
+
+            }
+
+            @Override
+            public void DataIsDeleted() {
+
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
 
-        WriteToDataBase();
-        ReadFromDataBase();
+
     }
 
     @Override
@@ -44,31 +68,4 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference mRef = database.getReference("message/1");
-
-    void WriteToDataBase()
-    {
-        mRef.setValue("test write");
-    }
-
-
-    void ReadFromDataBase()
-    {
-        ValueEventListener postListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String val = dataSnapshot.getValue(String.class);
-                Log.d("ok","Read ok - " + val);
-            }
-
-            public void onCancelled(DatabaseError databaseError)
-            {
-                Log.d("ko", "Read fail");
-            }
-        };
-        mRef.addValueEventListener(postListener);
-    }
-
 }
