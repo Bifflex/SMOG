@@ -1,10 +1,19 @@
 <resources>
     <string name="app_name">SMOGmain</string>
-    <string name="email_hint">Your email...</string>
+    <string name="email_hint">Your email</string>
     <string name="register_text">Bienvenue sur Smog !</string>
-    <string name="choose_pass">Choose a password...</string>
+    <string name="choose_pass">Choose a password</string>
     <string name="account_create">Créer le compte</string>
-    <string name="confirm_pass">Confirm password...</string>
+    <string name="confirm_pass">Confirm password</string>
     <string name="return_login">Retour</string>
-    <string name="acc_create">Créez un compte sur SMOG</string>
+    <string name="acc_create">Créez un compte sur SMOG !</string>
+    <string name="dems">dems</string>
+    <string name="logo" />
+    <string name="welcome">Bienvenue sur SMOG !</string>
+    <string name="inscription">Inscrivez-vous afin d\'avoir accès à l\'application intégrale et pouvoir commencer une recherche personnalisée !</string>
+    <string name="thx">Merci de votre inscription, Bonne exploration !</string>
+    <string name="email2">Email</string>
+    <string name="pass">Password</string>
+    <string name="connect">SE CONNECTER</string>
+    <string name="Create_acc">CREER UN COMPTE</string>
 </resources>
